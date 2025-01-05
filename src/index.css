@@ -1,0 +1,252 @@
+body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #333;
+      color: white;
+    }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    .nav-links li {
+      margin-right: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+    }
+    .contact-info {
+      background-color: #ff7b00;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 150px 50px;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to top, #ff7b00, transparent);
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background-color: #ff7b00;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    .about {
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-text {
+      text-align: left;
+      flex: 1;
+      padding-right: 20px;
+    }
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .about p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .about-cta {
+      background-color: #ff7b00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .services {
+      background-color: #333;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .services p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service-card {
+      background-color: #444;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+      text-align: left;
+    }
+    .service-card h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .service-card h3 span {
+      font-size: 1.2em;
+      color: #ff7b00;
+    }
+    .service-card p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    .services-cta {
+      background-color: #ff7b00;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    .testimonials {
+      padding: 50px;
+      text-align: center;
+    }
+    .testimonials h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .testimonials-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .testimonial-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      width: 350px;
+      text-align: left;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .testimonial-card .author {
+      font-weight: bold;
+      color: #333;
+      text-align: right;
+    }
+    .faq {
+      padding: 50px;
+      text-align: center;
+      background-color: #333;
+      color: white;
+    }
+    .faq h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .faq p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .accordion {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .accordion-item {
+      background-color: #444;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .accordion-header span {
+      font-size: 1.5em;
+      color: #ff7b00;
+    }
+    .accordion-content {
+      padding: 15px;
+      background-color: #555;
+      display: none;
+    }
+    .accordion-content p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    .faq-cta {
+      background-color: #ff7b00;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 30px;
+    }
